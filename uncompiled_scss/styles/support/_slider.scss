@@ -1,0 +1,34 @@
+.slider-box {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  .slider {
+    .slide {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 451px;
+
+      .slide-body {
+        padding: 112px 0px 28px 6px;
+      }
+    }
+  }
+
+  .counter {
+    position: absolute;
+    left: 30px;
+    bottom: 240px;
+
+    color: #8b9eb1;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    #current {
+      font-size: 18px;
+      color: #000;
+    }
+  }
+}
+
