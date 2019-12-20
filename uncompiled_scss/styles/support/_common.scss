@@ -1,0 +1,63 @@
+.big-title {
+  font-family: 'Muller';
+  font-weight: bold;
+  line-height: 45px;
+  font-size: 44px;
+  margin: 0;
+  color: $color-white;
+
+  &.sm {
+    font-size: 30px;
+    line-height: 43px;
+  }
+}
+
+.text-link {
+  color: #8e99a6;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.description {
+  font-family: 'Muller';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: $color-yellow;
+
+  &.sm {
+    color: #8E99A6;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.input {
+  border: 1px solid #4f5258;
+  background: #2c2f35;
+  color: white;
+  text-transform: uppercase;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+
+  text-shadow: 0 2px 4px #4f5258;
+  line-height: 50px;
+
+  height: 61px;
+  width: 49px;
+  border-radius: 5px;
+
+  margin: 5px;
+  transition: 200ms;
+
+  &:focus {
+    border-color: #969aa1;
+  }
+}
+
+
+
+
+

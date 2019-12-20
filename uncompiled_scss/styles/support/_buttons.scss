@@ -1,0 +1,22 @@
+.button {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3C4147;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Muller';
+  border: none;
+  border-radius: 50px;
+  display: inline-block;
+  width: 350px;
+  background: $color-yellow;
+  &:active {
+    background: #FFD554;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.02);
+  }
+}

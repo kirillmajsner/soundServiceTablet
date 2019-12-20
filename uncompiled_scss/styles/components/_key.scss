@@ -1,0 +1,72 @@
+.login-box {
+  margin-bottom: 40%;
+  .login-box-body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .login-head {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      margin: auto;
+      width: 50%;
+      margin-bottom: 20px;
+
+      .title {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+
+    .login-body {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+
+
+      .code-inputs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        .inputs-divider {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+
+      .description {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .login-form form {
+        text-align: center;
+      }
+    }
+  }
+
+  .left-side-inputs {
+    .input {
+      margin-left: 1px;
+      margin-right: 0;
+    }
+  }
+
+  .right-side-inputs {
+    .input {
+      margin-left: 0;
+      margin-right: 1px;
+    }
+  }
+}
+@include desktop{
+  .login-box{
+    margin-bottom: 20%;
+  }
+}

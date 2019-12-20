@@ -8,19 +8,26 @@
 @import "styles/support/common";
 @import "styles/support/slider";
 @import "styles/support/buttons";
+@import "styles/components/main-block";
+@import "styles/components/header";
+@import "styles/components/footer";
+@import "styles/components/key";
 
 html {
   position: relative;
   min-height: 100vh;
   box-sizing: border-box;
-
 }
 
 body {
-  background: #fff;
+  background: #3C4147 url('../images/bg.png') 50% 127px repeat-x;
   font-family: 'Muller';
   font-size: 12px;
   line-height: 15px;
   color: #8E99A6;
+
+  &.white {
+    background: $color-white url('../images/Lines.png') 50% 85% no-repeat;
+  }
 }
 
