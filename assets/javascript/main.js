@@ -17,5 +17,19 @@ $(function () {
             $(this).val(string);
             $(`#number${current + 1}`).focus();
         }
-    })
+    });
+
+    $('.playback, .next-song, .like-song').mousedown(function () {
+        $(this).addClass('press');
+    }).click(function () {
+        return false;
+    }).mouseup(function () {
+        $(this).removeClass('press');
+    });
+
+    $('.like-song').click(function () {
+        $(this).toggleClass("liked");
+    });
+
+
 });

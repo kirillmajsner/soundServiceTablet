@@ -57,6 +57,56 @@
   }
 }
 
+.like-song {
+  display: inline-block;
+  background: url("../images/like.svg") center no-repeat, $color-white;
+  border-radius: 50%;
+  border: 1px solid rgba($color: #3C4147, $alpha: 0.1);
+  height: 52px;
+  width: 52px;
+  transition: 200ms;
+  outline: none;
+
+  &.liked {
+    background: url("../images/liked.svg") center no-repeat, $color-white;
+  }
+
+  &.press {
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+  }
+}
+
+.status {
+  background: #FF7373;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 10px;
+  font-weight: bold;
+  color: $color-white;
+  padding: 5px 0 5px 10px;
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  text-align: left;
+
+  &.success {
+    background: #84CC45;
+  }
+
+  &:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    background: $color-white;
+  }
+}
+
 
 
 

@@ -1,0 +1,112 @@
+.player-box {
+  position: relative;
+
+  .player-body {
+    text-align: center;
+    height: 100vh;
+    padding: 42px 50px;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+
+    .track-info {
+      margin-bottom: 20px;
+    }
+
+    .artist-img {
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+
+    .title {
+      color: #3C4147;
+      font-size: 20px;
+      margin-bottom: 0;
+
+      line-height: 25px;
+      font-weight: bold;
+    }
+
+    .description {
+      margin-top: 0;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #3C4147;
+      margin-bottom: 0;
+    }
+
+    .progress-bar {
+      position: relative;
+      background-color: rgba($color: white, $alpha: 0.1);
+      border-radius: 1.25em;
+      width: 100%;
+      height: 3px;
+      display: block;
+
+      .progress-value {
+        color: #fff;
+        text-align: center;
+        background-color: $color-yellow;
+        transition: 0.3s all linear;
+        border-radius: 1.25em;
+        height: 3px;
+        display: block;
+      }
+    }
+
+    .player-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+
+      .playback {
+        display: inline-block;
+        border-radius: 50%;
+        height: 71px;
+        width: 71px;
+        border: none;
+        cursor: pointer;
+        background: url("../images/play.svg") 51% 50% no-repeat, $color-yellow;
+        margin-left: 28px;
+        margin-right: 25px;
+        vertical-align: -11px;
+        transition: 200ms;
+        outline: none;
+
+        &:focus {
+          outline: none;
+          border-color: #969aa1;
+        }
+
+        &.press {
+          -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+        }
+      }
+
+      .next-song {
+        display: inline-block;
+        background: url("../images/next.svg") center no-repeat, $color-white;
+        border-radius: 50%;
+        border: 1px solid rgba($color: #3C4147, $alpha: 0.1);
+        height: 52px;
+        width: 52px;
+        transition: 200ms;
+        outline: none;
+
+        &.press {
+          -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+        }
+      }
+    }
+  }
+
+}
