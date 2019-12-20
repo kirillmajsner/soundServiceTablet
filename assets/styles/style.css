@@ -786,7 +786,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .input:focus { border-color: #969aa1; }
 
-.like-song { display: inline-block; background: url("../images/like.svg") center no-repeat, #FFFFFF; border-radius: 50%; border: 1px solid rgba(60, 65, 71, 0.1); height: 52px; width: 52px; transition: 200ms; outline: none; }
+.like-song { display: inline-block; background: url("../images/like.svg") 49% no-repeat, #FFFFFF; border-radius: 50%; border: 1px solid rgba(60, 65, 71, 0.1); height: 52px; width: 52px; transition: 200ms; outline: none; }
 
 .like-song.liked { background: url("../images/liked.svg") center no-repeat, #FFFFFF; }
 
@@ -811,6 +811,8 @@ input[type="number"] { -moz-appearance: textfield; }
 .button { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 20px 10px; text-decoration: none; font-weight: bold; font-family: 'Muller'; border: none; border-radius: 50px; display: inline-block; width: 350px; background: #FAC114; }
 
 .button:active { background: #FFD554; transform: scale(1.02); }
+
+.button.btn { background-position: calc(100% - 31px) 47%; background-repeat: no-repeat; background-image: url("../images/play.svg"); background-size: 12px; width: 237px; vertical-align: 18px; text-align: left; padding-left: 29px; margin-right: 23px; }
 
 .main-block { margin: auto; width: 50%; margin-top: 45%; margin-bottom: 44%; }
 
@@ -853,13 +855,15 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 992px) { .login-box { margin-bottom: 20%; } }
 
-.player-box { position: relative; }
+.player-box { position: relative; margin-bottom: 10%; }
 
-.player-box .player-body { text-align: center; height: 100vh; padding: 42px 50px; flex-direction: column; display: flex; align-items: center; justify-content: center; margin-bottom: 20%; }
+.player-box .player-body { text-align: center; padding: 42px 50px; flex-direction: column; display: flex; align-items: center; justify-content: center; }
 
-.player-box .player-body .track-info { margin-bottom: 20px; }
+.player-box .player-body .artist-img { display: inline-block; margin-bottom: 15px; }
 
-.player-box .player-body .artist-img { display: inline-block; margin-bottom: 25px; }
+.player-box .player-body .track-info-head { margin-bottom: 15px; }
+
+.player-box .player-body .track-info-footer { margin-bottom: 30px; }
 
 .player-box .player-body .title { color: #3C4147; font-size: 20px; margin-bottom: 0; line-height: 25px; font-weight: bold; }
 

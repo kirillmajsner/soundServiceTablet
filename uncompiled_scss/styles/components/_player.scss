@@ -1,26 +1,28 @@
 .player-box {
   position: relative;
+  margin-bottom: 10%;
 
   .player-body {
     text-align: center;
-    height: 100vh;
     padding: 42px 50px;
 
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20%;
-
-    .track-info {
-      margin-bottom: 20px;
-    }
 
     .artist-img {
       display: inline-block;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
     }
 
+    .track-info-head {
+      margin-bottom: 15px;
+    }
+
+    .track-info-footer {
+      margin-bottom: 30px;
+    }
 
     .title {
       color: #3C4147;
