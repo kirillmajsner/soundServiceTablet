@@ -1,22 +1,12 @@
 .main-block {
   margin: auto;
-  width: 50%;
-  margin-top: 45%;
-  margin-bottom: 44%;
-  &.info{
-    margin-top: 20%;
-    margin-bottom: 41%;
-  }
-}
+  width: 350px;
 
+  .main-description {
+    margin-bottom: 300px;
 
-@include desktop {
-  .main-block {
-    margin-top: 30%;
-    margin-bottom: 30%;
-    &.info{
-      margin-top: 20%;
-      margin-bottom: 20%;
+    .big-title {
+      margin-bottom: 20px;
     }
   }
 }
