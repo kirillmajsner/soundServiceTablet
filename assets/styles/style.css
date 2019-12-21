@@ -816,7 +816,25 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .button.btn { background-position: calc(100% - 31px) 47%; background-repeat: no-repeat; background-image: url("../images/play.svg"); background-size: 12px; width: 237px; vertical-align: 18px; text-align: left; padding-left: 29px; margin-right: 23px; }
 
-@media (min-width: 576px) { .button { min-width: 350px; } }
+.progress-pie-chart { width: 315px; height: 315px; border-radius: 50%; background-color: #FFFFFF; position: relative; }
+
+.progress-pie-chart.gt-50 { background-color: #FAC114; }
+
+.ppc-progress { content: ""; position: absolute; border-radius: 50%; left: calc(50% - 157.5px); top: calc(50% - 157.5px); width: 315px; height: 315px; clip: rect(0, 157.5px, 315px, 0); }
+
+.ppc-progress .ppc-progress-fill { content: ""; position: absolute; border-radius: 50%; left: calc(50% - 157.5px); top: calc(50% - 157.5px); width: 315px; height: 315px; clip: rect(0, 315px, 315px, 157.5px); background: #FAC114; transform: rotate(60deg); }
+
+.gt-50 .ppc-progress { clip: rect(0, 315px, 315px, 157.5px); }
+
+.gt-50 .ppc-progress .ppc-progress-fill { clip: rect(0, 157.5px, 315px, 0); background: #FFFFFF; }
+
+.ppc-percents { content: ""; position: absolute; border-radius: 50%; left: calc(50% - 305.82524px/2); top: calc(50% - 305.82524px/2); width: 305.82524px; height: 305.82524px; background: #fff; text-align: center; display: table; overflow: hidden; }
+
+.ppc-percents img { width: 305.82524px; }
+
+.pcc-percents-wrapper { display: table-cell; vertical-align: middle; }
+
+.progress-pie-chart { margin: 50px auto 0; }
 
 .main-block { margin: auto; width: 350px; }
 
@@ -858,7 +876,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .player-box .player-body { text-align: center; padding: 42px 50px; flex-direction: column; display: flex; align-items: center; justify-content: center; }
 
-.player-box .player-body .artist-img { display: inline-block; margin-bottom: 15px; }
+.player-box .player-body .artist-img { display: inline-block; margin-bottom: -6px; padding: 3px; }
 
 .player-box .player-body .track-info-head { margin-bottom: 15px; }
 
