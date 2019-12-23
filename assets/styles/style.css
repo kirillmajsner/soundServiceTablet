@@ -844,8 +844,6 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header { margin-bottom: 140px; }
 
-.header.join { margin-bottom: 315px; }
-
 .header .ic-logo { padding-top: 50px; padding-left: 10px; }
 
 .footer { margin-bottom: 50px; text-align: center; }
@@ -854,7 +852,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .footer .footer-description.black { color: #3C4147; }
 
-.login-box { margin-bottom: 285px; }
+.login-box { margin-bottom: 230px; }
 
 .login-box .login-box-body { display: flex; flex-direction: column; align-content: center; justify-content: center; margin: auto; width: 350px; }
 
