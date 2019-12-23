@@ -17,5 +17,29 @@ $(function () {
             $(this).val(string);
             $(`#number${current + 1}`).focus();
         }
-    })
+    });
+
+    $('.playback, .next-song, .like-song').mousedown(function () {
+        $(this).addClass('press');
+    }).click(function () {
+        return false;
+    }).mouseup(function () {
+        $(this).removeClass('press');
+    });
+
+    $('.like-song').click(function () {
+        $(this).toggleClass("liked");
+    });
+
+
+});
+$(function () {
+    var $ppc = $('.progress-pie-chart'),
+        percent = parseInt($ppc.data('percent')),
+        deg = 360 * percent / 100;
+    if (percent > 50) {
+        $ppc.addClass('gt-50');
+    }
+    $('.ppc-progress-fill').css('transform', 'rotate(' + deg + 'deg)');
+
 });

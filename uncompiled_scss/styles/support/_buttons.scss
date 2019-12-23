@@ -14,9 +14,22 @@
   display: inline-block;
   width: 350px;
   background: $color-yellow;
+
   &:active {
     background: #FFD554;
     -webkit-transform: scale(1.1);
     transform: scale(1.02);
+  }
+
+  &.btn {
+    background-position: calc(100% - 31px) 47%;
+    background-repeat: no-repeat;
+    background-image: url("../images/play.svg");
+    background-size: 12px;
+    width: 237px;
+    vertical-align: 18px;
+    text-align: left;
+    padding-left: 29px;
+    margin-right: 23px;
   }
 }

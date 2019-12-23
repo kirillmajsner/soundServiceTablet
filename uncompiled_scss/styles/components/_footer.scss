@@ -1,7 +1,5 @@
 .footer {
-  margin: auto;
-  width: 50%;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   text-align: center;
 
   .footer-description {
@@ -12,9 +10,11 @@
     font-size: 12px;
     letter-spacing: 2px;
     color: $color-white;
-    &.black{
+
+    &.black {
       color: #3C4147;
     }
   }
 }
+
 
