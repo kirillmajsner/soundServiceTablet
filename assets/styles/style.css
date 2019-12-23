@@ -810,11 +810,13 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .slider-box .counter #current { font-size: 18px; color: #000; }
 
-.button { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 20px 10px; text-decoration: none; font-weight: bold; font-family: 'Muller'; border: none; border-radius: 50px; display: inline-block; width: 350px; background: #FAC114; }
+.button { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 20px 10px; text-decoration: none; font-weight: bold; font-family: 'Muller'; border: none; border-radius: 50px; display: inline-block; width: 275px; background: #FAC114; }
 
 .button:active { background: #FFD554; transform: scale(1.02); }
 
 .button.btn { background-position: calc(100% - 31px) 47%; background-repeat: no-repeat; background-image: url("../images/play.svg"); background-size: 12px; width: 237px; vertical-align: 18px; text-align: left; padding-left: 29px; margin-right: 23px; }
+
+@media (min-width: 576px) { .button { width: 350px; } }
 
 .progress-pie-chart { width: 315px; height: 315px; border-radius: 50%; background-color: #FFFFFF; position: relative; }
 
@@ -852,17 +854,17 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .footer .footer-description.black { color: #3C4147; }
 
-.login-box { margin-bottom: 230px; }
+.login-box { margin-top: 60px; margin-bottom: 285px; }
 
 .login-box .login-box-body { display: flex; flex-direction: column; align-content: center; justify-content: center; margin: auto; width: 350px; }
 
-.login-box .login-box-body .login-head { display: flex; flex-direction: column; align-content: center; justify-content: center; margin-bottom: 40px; }
+.login-box .login-box-body .login-head { display: flex; flex-direction: column; align-content: center; justify-content: center; margin-bottom: 25px; }
 
 .login-box .login-box-body .login-head .big-title { margin-bottom: 15px; }
 
 .login-box .login-box-body .login-body { display: flex; flex-direction: column; align-content: center; justify-content: center; }
 
-.login-box .login-box-body .login-body .code-inputs { display: flex; justify-content: center; margin-bottom: 30px; }
+.login-box .login-box-body .login-body .code-inputs { display: flex; justify-content: flex-start; margin-bottom: 30px; text-align: center; }
 
 .login-box .login-box-body .login-body .code-inputs .inputs-divider { margin-left: 10px; margin-right: 10px; }
 
