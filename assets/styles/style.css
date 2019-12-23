@@ -810,7 +810,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .slider-box .counter #current { font-size: 18px; color: #000; }
 
-.button { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 20px 10px; text-decoration: none; font-weight: bold; font-family: 'Muller'; border: none; border-radius: 50px; display: inline-block; width: 275px; background: #FAC114; }
+.button { font-size: 12px; line-height: 20px; letter-spacing: 2px; text-transform: uppercase; text-align: center; color: #3C4147; padding: 20px 10px; text-decoration: none; font-weight: bold; font-family: 'Muller'; border: none; border-radius: 50px; display: inline-block; width: 350px; background: #FAC114; }
 
 .button:active { background: #FFD554; transform: scale(1.02); }
 
